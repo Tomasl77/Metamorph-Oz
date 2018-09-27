@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Metamorph'Oz Tattoo - Salon de tatouage à La Férté-sous-Jouarre</title>
+	<link rel="stylesheet" href="./css/bootstrap.css">
+	<link rel="stylesheet" href="./css/index.css">
+</head>
+<body>
+	<span id="s1"></span>
+	<span id="s2"></span>
+	<span id="s3"></span>
+	<span id="s4"></span>
+	
+	<div id="mycontainer">
+		<div class="myheader">
+			<span class="mynavbar">
+				<nav class="navbar navbar-expand-lg navbar-light bg-light">
+				<img src="./images/logo.jpg" height="50" width="50" alt="logo">
+					<a class="navbar-brand" href="#">Metamorph ' Oz</a>
+					<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+						<span class="navbar-toggler-icon"></span>
+					</button>
+					<div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+						<div class="navbar-nav ml-auto" id="navbarcolor">
+							<a class="nav-item nav-link" href="#s1">Salon</a>
+							<a class="nav-item nav-link" href="#s2">Horaires</a>
+							<a class="nav-item nav-link" href="#s3">Photos</a>
+							<a class="nav-item nav-link" href="#s4">Me contacter</a>
+						</div>
+					</div>
+				</nav>
+			</span>
+			<div id="lastnew">
+				<p>Tagada pouet</p>
+			</div>
+		</div>
+		<div class="slides" id="slide1"> <!-- Slide 1 -->
+			<div class="slide_inside">
+				<div class="headertitle" id="salon">
+					Salon
+				</div>
+				<div id="location">
+					<p>Situé a une vingtaine de minutes de la ville de Meaux (77), Metamorph'Oz est un salon de tatouage ouvert depuis 2015, à La Ferté-sous-Jouarre.</p>
+					<p>Domicilié au 41 Avenue de Franklin Roosevelt, n'hésitez pas a venir vous renseigner.</p>
+
+				</div>
+				<div id="gmap">
+					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2620.535613325375!2d3.1190158153437753!3d48.94328630267988!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e8be947a47fa0b%3A0x444f6964c597cd3a!2s41+Avenue+Franklin+Roosevelt%2C+77260+La+Fert%C3%A9-sous-Jouarre!5e0!3m2!1sfr!2sfr!4v1537433954546" width="400" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
+				</div>
+			</div> <!-- /.slide_inside 1-->	
+		</div> <!-- /#slide1 -->
+	
+		<div class="slides" id="slide2"> <!-- Slide 2 -->
+			<div class="slide_inside">
+				<div class="headertitle">
+				Horaires
+				</div>
+				<div class="schedule">
+					<div class="opendays">
+						<ul>
+						<li>Lundi</li>
+						<li>Mardi</li>
+						<li>Mercredi</li>
+						<li>Jeudi</li>
+						<li>Vendredi</li>
+						<li>Samedi</li>
+						<li>Dimanche</li>
+						</ul>
+					</div>
+					<div class="openhours">
+						<ul>
+							<li>Fermé</li>
+							<li>12h30 - 18h30</li>
+							<li>12h30 - 18h30</li>
+							<li>Fermé</li>
+							<li>12h30 - 18h30</li>
+							<li>12h30 - 18h30</li>
+							<li>Fermé</li>
+						</ul>
+					</div>
+				</div>
+			</div> <!-- /.slide_inside 2-->	     	
+		</div> <!-- /#slide2 -->
+ 	
+		<div class="slides" id="slide3"> <!-- Slide 3 -->
+			<div class="slide_inside">			
+				<div class="headertitle">
+				Photos
+				</div>
+				<div id="tattoocontainer">
+					<div class="carousel slide" id="tattoopics" data-ride="carousel">
+						<ol class="carousel-indicators">
+							<li data-target="#tattoopics" data-slide-to="0" class="active"></li>
+							<li data-target="#tattoopics" data-slide-to="1"></li>
+							<li data-target="#tattoopics" data-slide-to="2"></li>
+						</ol>
+						<div class="carousel-inner">
+							<div class="carousel-item active">
+							<img class="d-block w-100" src="./images/pics/tattoo2.jpg" alt="First slide">
+							</div>
+							<div class="carousel-item">
+							<img class="d-block w-100" src="./images/pics/tattoo1.jpg" alt="Second slide">
+							</div>
+							<div class="carousel-item">
+							<img class="d-block w-100" src="./images/pics/tattoo3.jpg" alt="Third slide">
+							</div>
+						</div>
+						<a class="carousel-control-prev" href="#tattoopics" role="button" data-slide="prev">
+							<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+							<span class="sr-only">Précedent</span>
+						</a>
+						<a class="carousel-control-next" href="#tattoopics" role="button" data-slide="next">
+							<span class="carousel-control-next-icon" aria-hidden="true"></span>
+							<span class="sr-only">Suivant</span>
+						</a>
+					</div>
+				</div>
+			</div> <!-- /.slide_inside 3-->	    
+		</div> <!--  /#slide3 -->
+
+		<div class="slides" id="slide4"> <!-- Slide 4 -->
+			<div class="slide_inside">			
+			<div class="headertitle">
+			Me contacter
+			</div>
+			<p>Telephone : 06.98.15.93.41</p>
+			</div> <!-- /.slide_inside 4-->	    
+		</div> <!--  /#slide4 -->
+	</div>
+
+	<script src="./js/jquery.js"></script>
+	<script src="./js/bootstrap.js"></script>
+	<script src="./js/index.js"></script>
+</body>
+</html>

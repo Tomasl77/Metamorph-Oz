@@ -1,0 +1,368 @@
+/*********************************
+**********  FONTS  ***************
+*********************************/
+
+@font-face {
+	font-family: ginga;
+	src:url(../fonts/ginga.ttf);
+}
+
+@font-face {
+	font-family: extra;
+	src:url(../fonts/extra.ttf);
+}
+
+@font-face {
+	font-family: beyond;
+	src:url(../fonts/beyond.ttf);
+}
+
+@font-face {
+	font-family: pentagon;
+	src:url(../fonts/pentagon.ttf);
+}
+
+@font-face {
+	font-family: leroy;
+	src:url(../fonts/leroy.ttf);
+}
+/**********************************
+*********  Main CSS  **************
+**********************************/
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	overflow-y: hidden;
+}
+
+.myheader {
+	width: 100%;
+	background-color: #2193E0;
+	top: 0;
+	position: fixed;
+	z-index: 1;
+	overflow: hidden;
+}
+
+#lastnew {
+height: 30px;
+}
+
+#lastnew p	{
+position: absolute;
+width: 100%;
+height: 100%;
+margin: 0;
+line-height: 30px;
+text-align: center;
+/* Starting position */
+-moz-transform:translateX(100%);
+-webkit-transform:translateX(100%); 
+transform:translateX(100%);
+/* Apply animation to this element */ 
+-moz-animation: scroll-left 15s linear infinite;
+-webkit-animation: scroll-left 15s linear infinite;
+animation: scroll-left 15s linear infinite;
+}
+
+/* Move it (define the animation) */
+@-moz-keyframes scroll-left	{
+0%	{ -moz-transform: translateX(100%); }
+100%	{ -moz-transform: translateX(-100%); }
+	}
+@-webkit-keyframes scroll-left {
+0%	{ -webkit-transform: translateX(100%); }
+100%	{ -webkit-transform: translateX(-100%); }
+	}
+@keyframes scroll-left {
+0%	{ 
+-moz-transform: translateX(100%); /* Browser bug fix */
+-webkit-transform: translateX(100%); /* Browser bug fix */
+transform: translateX(100%); 
+	}
+100% { 
+-moz-transform: translateX(-100%); /* Browser bug fix */
+-webkit-transform: translateX(-100%); /* Browser bug fix */
+transform: translateX(-100%); 
+	}
+}
+.mynavbar img {
+	margin-left: -10px;
+	margin-right: 20px;
+	position: relative;
+}
+
+.navbar-brand {
+	font-family: ginga;
+	font-size: 40px;
+}	
+
+#mycontainer{
+	top: 0;
+	position: relative;
+	transition: top 1.8s cubic-bezier(.49,.22,.52,1.35);
+}
+.headertitle {
+	border: 2px solid blue;
+	background-color: black;
+	color: white;
+	font-size: 30px;
+	width: 200px;
+	margin: auto;
+	margin-top:20px; 
+}
+
+#navbarNavAltMarkup {
+	font-family: extra;
+}
+
+.slide_inside {
+	width: 100%;
+	position: relative;
+	padding: 1px;
+	text-align: center;
+}
+
+/******************************
+**********  SLIDES  ***********
+******************************/
+
+.slides {
+	height: 950px;
+	padding-top: 90px;
+	transition: background-position 1.8s  cubic-bezier(.49,.22,.52,1.35);
+}
+
+/*** Slide 1 ***/
+
+#slide1 {
+	background:url(../images/retro_intro.png) center 0 repeat fixed; 
+}
+
+#slide1 .slide_inside  {
+	height: 100%;
+	/* border: 2px solid blue; */
+}
+
+#location {
+	border: 2px solid orange;
+	position: absolute;
+	font-family: leroy;
+	font-size: 1.5rem;
+	margin-top:50px; 
+	margin-left: 2%;
+	width: 30%;
+}
+
+#gmap  {
+	position: absolute;
+	margin-top: 50px;
+	margin-left: 60%;
+	transform: translateX(-50%); 
+}
+
+/*** Slide 2 ***/
+
+#slide2 .slide_inside  {
+}
+
+#slide2 {
+	background:url(../images/tex2.png) center 0 repeat fixed; 
+}
+
+.schedule {
+	border: 2px solid green;
+	margin: auto;
+	margin-top: 10px;
+	padding-top: 50px;
+	height: 500px;
+	width: 800px;
+	display: flex;
+	line-height: 2.5rem;
+}
+
+.opendays {
+	border: 2px solid yellow;
+	height: 70%;
+	width: 50%;
+	overflow: hidden;
+}
+
+.openhours {
+	border: 2px solid purple;
+	height: 70%;
+	width: 50%;
+	overflow: hidden;
+}
+
+/*** Slide 3 ***/
+
+#slide3 .slide_inside {
+}
+
+#slide3 {
+ background:url(../images/felt.png) center 0 repeat fixed;
+}
+
+.carousel-indicators li {
+  width: 10px;
+  height: 10px;
+  border-radius: 100%;
+}
+
+#tattoocontainer {
+	margin: auto;
+	margin-top: 10px;
+	height: 500px;
+	width: 800px;
+	border: 2px solid red;
+}
+
+.carousel {
+	data-interval: 3000;
+}
+
+.carousel-item img {
+	height: 500px;
+	width: 100%;
+	padding: 2px;
+}
+
+/*** Slide 4 ***/
+
+#slide4 .slide_inside {
+	color: white;
+}
+
+#slide4 {
+ background:url(../images/dark-grey.png) center 0 repeat fixed;
+}
+
+
+#s1:target ~ #mycontainer { top:0px; }
+#s1:target ~ #mycontainer #navbarcolor a:first-child {color: white; font-weight: bold;}
+
+#s2:target ~ #mycontainer { top:-950px; }
+#s2:target ~ #mycontainer #navbarcolor a:nth-child(2) {color: white; font-weight: bold;}
+
+#s3:target ~ #mycontainer { top:-1900px; }
+#s3:target ~ #mycontainer #navbarcolor a:nth-child(3) {color: white; font-weight: bold;}
+
+#s4:target ~ #mycontainer { top:-2850px; }
+#s4:target ~ #mycontainer #navbarcolor a:last-child {color: white; font-weight: bold;}
+ 
+
+/*****************************
+******** MEDIA QUERY *********
+*****************************/
+@media screen AND (max-width: 992px) {
+	
+	#location{
+		margin-left: 50px;
+	}
+
+	.slide_inside {
+		
+	}
+	#slide1 #gmap {
+		margin-left: 70%;
+	}
+	#slide1 iframe{
+		width: 300px;
+		height: 200px;
+	}
+
+	#tattoocontainer {
+		height: 350px;
+		width: 550px;
+	}
+
+	.carousel-item img {
+		height: 346px;
+	}
+
+	.schedule {
+		width: 550px;
+		height: 450px
+	}
+}
+
+@media screen AND (max-width: 576px) {
+
+	.slide_inside {
+		overflow-y: scroll auto;
+	}
+
+	.navbar-brand {
+		font-size: 30px;
+	}
+	
+	.headertitle {
+	border: 2px solid blue;
+	height: 2rem;
+	background-color: black;
+	color: white;
+	font-size: 20px;
+	width: 80%;
+	margin: auto;
+	text-decoration: underline;
+	}
+
+	#location {
+		width: 80%;
+		height: 270px;
+		margin-left: 50%;
+		transform: translateX(-50%);
+	}
+	
+	#slide1 #gmap {
+		border: 2px solid black;
+		position: absolute;
+		margin:auto;
+		margin-top: 330px;
+		width: 100%;
+		transform: translateX(0);
+	}
+
+	#slide1 iframe {
+
+		height: 150px;
+		width: 70%;
+	}
+
+	#tattoocontainer {
+		height: 250px;
+		width: 300px;
+	}
+
+	.carousel-item img {
+		height: 246px;
+	}
+
+	.schedule {
+		width: 320px;
+		height: 450px;
+	}
+}
+
+@media screen AND (max-height: 1980px) AND (max-width: 400px){
+	* {
+		overflow: auto;
+	}
+	#slide1 {
+		height: 2000px;
+	}
+}
+
+/********************************************
+************** BOOTSTRAP ********************
+********************************************/
+
+/* ------ HEADER --------*/
+
+.navbar {
+  padding: 0rem 1rem;
+  background-color: #A91F1F !important;
+}
