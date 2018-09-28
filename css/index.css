@@ -106,7 +106,7 @@ transform: translateX(-100%);
 }
 .headertitle {
 	border: 2px solid blue;
-	background-color: black;
+	background-color: #A91F1F;
 	color: white;
 	font-size: 30px;
 	width: 200px;
@@ -347,11 +347,11 @@ transform: translateX(-100%);
 	}
 }
 
-@media screen AND (max-height: 1980px) AND (max-width: 400px){
+@media screen AND (min-height: 640px) AND (max-width: 600px){
 	* {
 		overflow: auto;
 	}
-	#slide1 {
+	.slide_inside {
 		height: 2000px;
 	}
 }
