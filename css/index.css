@@ -104,8 +104,10 @@ transform: translateX(-100%);
 	position: relative;
 	transition: top 1.8s cubic-bezier(.49,.22,.52,1.35);
 }
+
 .headertitle {
-	border: 2px solid blue;
+    border-radius: 5%;
+    border: 1.5px solid darkred;
 	background-color: #A91F1F;
 	color: white;
 	font-size: 30px;
@@ -173,7 +175,6 @@ transform: translateX(-100%);
 }
 
 .schedule {
-	border: 2px solid green;
 	margin: auto;
 	margin-top: 10px;
 	padding-top: 50px;
@@ -184,14 +185,12 @@ transform: translateX(-100%);
 }
 
 .opendays {
-	border: 2px solid yellow;
 	height: 70%;
 	width: 50%;
 	overflow: hidden;
 }
 
 .openhours {
-	border: 2px solid purple;
 	height: 70%;
 	width: 50%;
 	overflow: hidden;
@@ -220,9 +219,6 @@ transform: translateX(-100%);
 	border: 2px solid red;
 }
 
-.carousel {
-	data-interval: 3000;
-}
 
 .carousel-item img {
 	height: 500px;
@@ -300,14 +296,11 @@ transform: translateX(-100%);
 	}
 	
 	.headertitle {
-	border: 2px solid blue;
-	height: 2rem;
-	background-color: black;
+	background-color: #A91F1F;
 	color: white;
-	font-size: 20px;
-	width: 80%;
+	font-size: 25px;
+	width: 60%;
 	margin: auto;
-	text-decoration: underline;
 	}
 
 	#location {
@@ -318,7 +311,6 @@ transform: translateX(-100%);
 	}
 	
 	#slide1 #gmap {
-		border: 2px solid black;
 		position: absolute;
 		margin:auto;
 		margin-top: 330px;
@@ -344,18 +336,52 @@ transform: translateX(-100%);
 	.schedule {
 		width: 320px;
 		height: 450px;
+	    padding-top: 30px;
 	}
 }
 
-@media screen AND (min-height: 640px) AND (max-width: 600px){
-	* {
-		overflow: auto;
+@media screen AND (max-height: 400px){
+    
+    .headertitle{
+        font-size: 20px;
+    }
+    
+    #slide1 #gmap {
+        margin-top: 30px;
+    }
+    
+    #slide1 iframe {
+        height: 120px;
+        width: 170px;
+    }
+    
+    #location {
+		margin-top: 30px;
+		width: 45%;
+		height: 200px;
+		font-size: 1rem;
 	}
-	.slide_inside {
-		height: 2000px;
+	
+	#tattoocontainer {
+	    height: 180px;
+	    width: 40%;
 	}
+	
+	.carousel-item img {
+		height: 176px;
+	}
+	
+	.schedule {
+	padding-top: 0;
+	height: 300px;
+	width: 80%;
+	line-height: 1.5rem;
+    }
+    
+    .opendays, .openhours{
+        height: 100%;
+    }
 }
-
 /********************************************
 ************** BOOTSTRAP ********************
 ********************************************/
@@ -363,6 +389,6 @@ transform: translateX(-100%);
 /* ------ HEADER --------*/
 
 .navbar {
-  padding: 0rem 1rem;
+  padding: 0 1rem;
   background-color: #A91F1F !important;
 }
